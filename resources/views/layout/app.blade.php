@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+<html lang="en" dir="" data-bs-theme=""
+    data-color-theme="" data-layout="">
 
 <head>
     <!-- Required meta tags -->
@@ -62,14 +63,14 @@
                 <nav class="sidebar-nav scroll-sidebar" data-simplebar>
                     <ul id="sidebarnav">
                         <!-- ---------------------------------- -->
-                        <!-- Home -->
+                        <!-- Dashboard -->
                         <!-- ---------------------------------- -->
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Dashboard</span>
                         </li>
                         <!-- ---------------------------------- -->
-                        <!-- Dashboard -->
+                        <!-- Home -->
                         <!-- ---------------------------------- -->
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="" id="get-url" aria-expanded="false">
@@ -77,6 +78,24 @@
                                     <i class="ti ti-home"></i>
                                 </span>
                                 <span class="hide-menu">Home</span>
+                            </a>
+                        </li>
+                        <!-- ---------------------------------- -->
+                        <!-- Setting -->
+                        <!-- ---------------------------------- -->
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Setting</span>
+                        </li>
+                        <!-- ---------------------------------- -->
+                        <!-- Company -->
+                        <!-- ---------------------------------- -->
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="" id="get-url" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-building"></i>
+                                </span>
+                                <span class="hide-menu">Company</span>
                             </a>
                         </li>
                     </ul>
@@ -94,9 +113,9 @@
                         </div>
                         <form action="/logout" method="post">
                             @csrf
-                            <button type="submit" class="border-0 bg-transparent text-primary ms-auto"
-                                tabindex="0" type="button" aria-label="logout" data-bs-toggle="tooltip"
-                                data-bs-placement="top" data-bs-title="logout">
+                            <button type="submit" class="border-0 bg-transparent text-primary ms-auto" tabindex="0"
+                                type="button" aria-label="logout" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-title="logout">
                                 <i class="ti ti-power fs-6"></i>
                             </button>
                         </form>
@@ -122,241 +141,6 @@
                                     <i class="ti ti-menu-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item nav-icon-hover-bg rounded-circle d-none d-lg-flex">
-                                <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    <i class="ti ti-search"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <ul class="navbar-nav quick-links d-none d-lg-flex align-items-center">
-                            <!-- ------------------------------- -->
-                            <!-- start apps Dropdown -->
-                            <!-- ------------------------------- -->
-                            <li class="nav-item nav-icon-hover-bg rounded w-auto dropdown d-none d-lg-block mx-0">
-                                <div class="hover-dd">
-                                    <a class="nav-link" href="javascript:void(0)">
-                                        Apps<span class="mt-1">
-                                            <i class="ti ti-chevron-down fs-3"></i>
-                                        </span>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-nav dropdown-menu-animate-up py-0">
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <div class="ps-7 pt-7">
-                                                    <div class="border-bottom">
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <div class="position-relative">
-                                                                    <a href="../main/app-chat.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-chat.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                Chat Application
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">New
-                                                                                messages arrived</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-invoice.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-invoice.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">Invoice
-                                                                                App</h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">Get
-                                                                                latest invoice</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-contact2.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-mobile.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                Contact Application
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">2
-                                                                                Unsaved Contacts</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-email.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-message-box.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">Email App
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">Get
-                                                                                new emails</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <div class="position-relative">
-                                                                    <a href="../main/page-user-profile.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-cart.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                User Profile
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">learn
-                                                                                more information</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-calendar.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-date.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                Calendar App
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">Get
-                                                                                dates</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-contact.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-lifebuoy.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                Contact List Table
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">Add
-                                                                                new contact</span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="../main/app-notes.html"
-                                                                        class="d-flex align-items-center pb-9 position-relative">
-                                                                        <div
-                                                                            class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-application.svg"
-                                                                                alt="modernize-img" class="img-fluid"
-                                                                                width="24" height="24" />
-                                                                        </div>
-                                                                        <div>
-                                                                            <h6 class="mb-1 fw-semibold fs-3">
-                                                                                Notes Application
-                                                                            </h6>
-                                                                            <span
-                                                                                class="fs-2 d-block text-body-secondary">To-do
-                                                                                and Daily tasks</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row align-items-center py-3">
-                                                        <div class="col-8">
-                                                            <a class="fw-semibold d-flex align-items-center lh-1"
-                                                                href="javascript:void(0)">
-                                                                <i class="ti ti-help fs-6 me-2"></i>Frequently Asked
-                                                                Questions
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div class="d-flex justify-content-end pe-4">
-                                                                <button class="btn btn-primary">Check</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 ms-n4">
-                                                <div class="position-relative p-7 border-start h-100">
-                                                    <h5 class="fs-5 mb-9 fw-semibold">Quick Links</h5>
-                                                    <ul class="">
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/page-pricing.html">Pricing Page</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/authentication-login.html">Authentication
-                                                                Design</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/authentication-register.html">Register
-                                                                Now</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/authentication-error.html">404 Error
-                                                                Page</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/app-notes.html">Notes App</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/page-user-profile.html">User
-                                                                Application</a>
-                                                        </li>
-                                                        <li class="mb-3">
-                                                            <a class="fw-semibold bg-hover-primary"
-                                                                href="../main/page-account-settings.html">Account
-                                                                Settings</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <!-- ------------------------------- -->
-                            <!-- end apps Dropdown -->
-                            <!-- ------------------------------- -->
-                            <li class="nav-item dropdown-hover d-none d-lg-block">
-                                <a class="nav-link" href="../main/app-email.html">Email</a>
-                            </li>
                         </ul>
 
                         <div class="d-block d-lg-none py-4">
@@ -381,9 +165,7 @@
                                     <i class="ti ti-align-justified fs-7"></i>
                                 </a>
                                 <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
-                                    <!-- ------------------------------- -->
-                                    <!-- start language Dropdown -->
-                                    <!-- ------------------------------- -->
+                                    {{-- dark mode toggle --}}
                                     <li class="nav-item nav-icon-hover-bg rounded-circle">
                                         <a class="nav-link moon dark-layout" href="javascript:void(0)">
                                             <i class="ti ti-moon moon"></i>
@@ -392,166 +174,6 @@
                                             <i class="ti ti-sun sun"></i>
                                         </a>
                                     </li>
-                                    <li class="nav-item nav-icon-hover-bg rounded-circle dropdown">
-                                        <a class="nav-link" href="javascript:void(0)" id="drop2"
-                                            aria-expanded="false">
-                                            <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-flag-en.svg"
-                                                alt="modernize-img" width="20px" height="20px"
-                                                class="rounded-circle object-fit-cover round-20" />
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
-                                            aria-labelledby="drop2">
-                                            <div class="message-body">
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-flag-en.svg"
-                                                            alt="modernize-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">English (UK)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-flag-cn.svg"
-                                                            alt="modernize-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">中国人 (Chinese)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-flag-fr.svg"
-                                                            alt="modernize-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">français (French)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-flag-sa.svg"
-                                                            alt="modernize-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">عربي (Arabic)</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- ------------------------------- -->
-                                    <!-- end language Dropdown -->
-                                    <!-- ------------------------------- -->
-
-                                    <!-- ------------------------------- -->
-                                    <!-- start notification Dropdown -->
-                                    <!-- ------------------------------- -->
-                                    <li class="nav-item nav-icon-hover-bg rounded-circle dropdown">
-                                        <a class="nav-link position-relative" href="javascript:void(0)"
-                                            id="drop2" aria-expanded="false">
-                                            <i class="ti ti-bell-ringing"></i>
-                                            <div class="notification bg-primary rounded-circle"></div>
-                                        </a>
-                                        <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up"
-                                            aria-labelledby="drop2">
-                                            <div class="d-flex align-items-center justify-content-between py-3 px-7">
-                                                <h5 class="mb-0 fs-5 fw-semibold">Notifications</h5>
-                                                <span class="badge text-bg-primary rounded-4 px-3 py-1 lh-sm">5
-                                                    new</span>
-                                            </div>
-                                            <div class="message-body" data-simplebar>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-2.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">Roman Joined the Team!
-                                                        </h6>
-                                                        <span class="fs-2 d-block text-body-secondary">Congratulate
-                                                            him</span>
-                                                    </div>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-3.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">New message</h6>
-                                                        <span class="fs-2 d-block text-body-secondary">Salma sent you
-                                                            new message</span>
-                                                    </div>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-4.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">Bianca sent payment</h6>
-                                                        <span class="fs-2 d-block text-body-secondary">Check your
-                                                            earnings</span>
-                                                    </div>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-5.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">Jolly completed tasks</h6>
-                                                        <span class="fs-2 d-block text-body-secondary">Assign her new
-                                                            tasks</span>
-                                                    </div>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-6.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">John received payment</h6>
-                                                        <span class="fs-2 d-block text-body-secondary">$230 deducted
-                                                            from account</span>
-                                                    </div>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="py-6 px-7 d-flex align-items-center dropdown-item">
-                                                    <span class="me-3">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/profile/user-7.jpg"
-                                                            alt="user" class="rounded-circle" width="48"
-                                                            height="48" />
-                                                    </span>
-                                                    <div class="w-100">
-                                                        <h6 class="mb-1 fw-semibold lh-base">Roman Joined the Team!
-                                                        </h6>
-                                                        <span class="fs-2 d-block text-body-secondary">Congratulate
-                                                            him</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="py-6 px-7 mb-1">
-                                                <button class="btn btn-outline-primary w-100">See All
-                                                    Notifications</button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- ------------------------------- -->
-                                    <!-- end notification Dropdown -->
-                                    <!-- ------------------------------- -->
 
                                     <!-- ------------------------------- -->
                                     <!-- start profile Dropdown -->
@@ -613,11 +235,12 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                               
+
                                                 <form action="/logout" method="post">
                                                     <div class="d-grid py-4 px-7 pt-8">
                                                         @csrf
-                                                        <button type="submit" class="btn btn-primary">Log out</button>
+                                                        <button type="submit" class="btn btn-primary">Log
+                                                            out</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -633,196 +256,6 @@
                     <!-- ---------------------------------- -->
                     <!-- End Vertical Layout Header -->
                     <!-- ---------------------------------- -->
-
-                    <!-- ------------------------------- -->
-                    <!-- apps Dropdown in Small screen -->
-                    <!-- ------------------------------- -->
-                    <!--  Mobilenavbar -->
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="mobilenavbar"
-                        aria-labelledby="offcanvasWithBothOptionsLabel">
-                        <nav class="sidebar-nav scroll-sidebar">
-                            <div class="offcanvas-header justify-content-between">
-                                <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/logos/favicon.ico"
-                                    alt="modernize-img" class="img-fluid" />
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body h-n80" data-simplebar="" data-simplebar>
-                                <ul id="sidebarnav">
-                                    <li class="sidebar-item">
-                                        <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                            aria-expanded="false">
-                                            <span>
-                                                <i class="ti ti-apps"></i>
-                                            </span>
-                                            <span class="hide-menu">Apps</span>
-                                        </a>
-                                        <ul aria-expanded="false" class="collapse first-level my-3">
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-chat.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-chat.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Chat Application</h6>
-                                                        <span class="fs-2 d-block text-muted">New messages
-                                                            arrived</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-invoice.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-invoice.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Invoice App</h6>
-                                                        <span class="fs-2 d-block text-muted">Get latest invoice</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-cotact.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-mobile.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Contact Application</h6>
-                                                        <span class="fs-2 d-block text-muted">2 Unsaved Contacts</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-email.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-message-box.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Email App</h6>
-                                                        <span class="fs-2 d-block text-muted">Get new emails</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/page-user-profile.html"
-                                                    class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-cart.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">User Profile</h6>
-                                                        <span class="fs-2 d-block text-muted">learn more
-                                                            information</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-calendar.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-date.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Calendar App</h6>
-                                                        <span class="fs-2 d-block text-muted">Get dates</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-contact2.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-lifebuoy.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Contact List Table</h6>
-                                                        <span class="fs-2 d-block text-muted">Add new contact</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item py-2">
-                                                <a href="../main/app-notes.html" class="d-flex align-items-center">
-                                                    <div
-                                                        class="text-bg-light rounded-1 me-3 p-6 d-flex align-items-center justify-content-center">
-                                                        <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-dd-application.svg"
-                                                            alt="modernize-img" class="img-fluid" width="24"
-                                                            height="24" />
-                                                    </div>
-                                                    <div>
-                                                        <h6 class="mb-1 bg-hover-primary">Notes Application</h6>
-                                                        <span class="fs-2 d-block text-muted">To-do and Daily
-                                                            tasks</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <ul class="px-8 mt-7 mb-4">
-                                                <li class="sidebar-item mb-3">
-                                                    <h5 class="fs-5 fw-semibold">Quick Links</h5>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/page-pricing.html">Pricing Page</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/authentication-login.html">Authentication
-                                                        Design</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/authentication-register.html">Register Now</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/authentication-error.html">404 Error Page</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/app-notes.html">Notes
-                                                        App</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/page-user-profile.html">User Application</a>
-                                                </li>
-                                                <li class="sidebar-item py-2">
-                                                    <a class="fw-semibold text-dark"
-                                                        href="../main/page-account-settings.html">Account Settings</a>
-                                                </li>
-                                            </ul>
-                                        </ul>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a class="sidebar-link" href="../main/app-email.html" aria-expanded="false">
-                                            <span>
-                                                <i class="ti ti-mail"></i>
-                                            </span>
-                                            <span class="hide-menu">Email</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
                 </div>
                 <div class="app-header with-horizontal">
                     <nav class="navbar navbar-expand-xl container-fluid p-0">
@@ -1307,8 +740,7 @@
                                                         <span
                                                             class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
                                                             <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-account.svg"
-                                                                alt="modernize-img" width="24"
-                                                                height="24" />
+                                                                alt="modernize-img" width="24" height="24" />
                                                         </span>
                                                         <div class="w-100 ps-3">
                                                             <h6 class="mb-1 fs-3 fw-semibold lh-base">My Profile</h6>
@@ -1321,8 +753,7 @@
                                                         <span
                                                             class="d-flex align-items-center justify-content-center text-bg-light rounded-1 p-6">
                                                             <img src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/images/svgs/icon-inbox.svg"
-                                                                alt="modernize-img" width="24"
-                                                                height="24" />
+                                                                alt="modernize-img" width="24" height="24" />
                                                         </span>
                                                         <div class="w-100 ps-3">
                                                             <h6 class="mb-1 fs-3 fw-semibold lh-base">My Inbox</h6>
@@ -1334,7 +765,8 @@
                                                 <form action="/logout" method="post">
                                                     <div class="d-grid py-4 px-7 pt-8">
                                                         @csrf
-                                                        <button type="submit" class="btn btn-primary">Log out</button>
+                                                        <button type="submit" class="btn btn-primary">Log
+                                                            out</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1411,187 +843,194 @@
                 aria-controls="offcanvasExample">
                 <i class="icon ti ti-settings fs-7"></i>
             </button>
+            <form action="{{ route('settings.save') }}" method="post">
+                @csrf
+                @method('PUT')
+                <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+                <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+                        <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
+                            Settings
+                        </h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body h-n80" data-simplebar>
+                        <h6 class="fw-semibold fs-4 mb-2">Theme</h6>
 
-            <div class="offcanvas customizer offcanvas-end" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
-                    <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
-                        Settings
-                    </h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <input type="radio" class="btn-check light-layout" name="theme"
+                                id="light-layout" autocomplete="off" value="light" />
+                            <label class="btn p-9 btn-outline-primary rounded-2" for="light-layout">
+                                <i class="icon ti ti-brightness-up fs-7 me-2"></i>Light
+                            </label>
+
+                            <input type="radio" class="btn-check dark-layout" name="theme" id="dark-layout"
+                                autocomplete="off" value="dark" />
+                            <label class="btn p-9 btn-outline-primary rounded-2" for="dark-layout">
+                                <i class="icon ti ti-moon fs-7 me-2"></i>Dark
+                            </label>
+                        </div>
+
+                        <h6 class="mt-5 fw-semibold fs-4 mb-2">Theme Direction</h6>
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <input type="radio" class="btn-check" name="themedir" id="ltr-layout"
+                                autocomplete="off" value="ltr" />
+                            <label class="btn p-9 btn-outline-primary" for="ltr-layout">
+                                <i class="icon ti ti-text-direction-ltr fs-7 me-2"></i>LTR
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themedir" id="rtl-layout"
+                                autocomplete="off" value="rtl" />
+                            <label class="btn p-9 btn-outline-primary" for="rtl-layout">
+                                <i class="icon ti ti-text-direction-rtl fs-7 me-2"></i>RTL
+                            </label>
+                        </div>
+
+                        <h6 class="mt-5 fw-semibold fs-4 mb-2">Theme Colors</h6>
+
+                        <div class="d-flex flex-row flex-wrap gap-3 customizer-box color-pallete" role="group">
+                            <input type="radio" class="btn-check" name="themecolor" id="Blue_Theme"
+                                autocomplete="off" value="Blue_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Blue_Theme')" for="Blue_Theme" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="BLUE_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-1">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themecolor" id="Aqua_Theme"
+                                autocomplete="off" value="Aqua_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Aqua_Theme')" for="Aqua_Theme" data-bs-toggle="tooltip"
+                                data-bs-placement="top" data-bs-title="AQUA_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-2">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themecolor" id="Purple_Theme"
+                                autocomplete="off" value="Purple_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Purple_Theme')" for="Purple_Theme"
+                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PURPLE_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-3">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themecolor" id="Green_Theme"
+                                autocomplete="off" value="Green_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Green_Theme')" for="Green_Theme"
+                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-4">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themecolor" id="Cyan_Theme"
+                                autocomplete="off" value="Cyan_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Cyan_Theme')" for="Cyan_Theme"
+                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CYAN_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-5">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="themecolor" id="Orange_Theme"
+                                autocomplete="off" value="Orange_Theme" />
+                            <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
+                                onclick="handleColorTheme('Orange_Theme')" for="Orange_Theme"
+                                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ORANGE_THEME">
+                                <div
+                                    class="color-box rounded-circle d-flex align-items-center justify-content-center skin-6">
+                                    <i class="ti ti-check text-white d-flex icon fs-5"></i>
+                                </div>
+                            </label>
+                        </div>
+
+                        <h6 class="mt-5 fw-semibold fs-4 mb-2">Layout Type</h6>
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <div>
+                                <input type="radio" class="btn-check" name="layouttype" id="vertical-layout"
+                                    autocomplete="off" value="vertical" />
+                                <label class="btn p-9 btn-outline-primary" for="vertical-layout">
+                                    <i class="icon ti ti-layout-sidebar-right fs-7 me-2"></i>Vertical
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" class="btn-check" name="layouttype" id="horizontal-layout"
+                                    autocomplete="off" value="horizontal" />
+                                <label class="btn p-9 btn-outline-primary" for="horizontal-layout">
+                                    <i class="icon ti ti-layout-navbar fs-7 me-2"></i>Horizontal
+                                </label>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-5 fw-semibold fs-4 mb-2">Container Option</h6>
+
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <input type="radio" class="btn-check" name="boxedcontainer" id="boxed-layout"
+                                autocomplete="off" value="boxed" />
+                            <label class="btn p-9 btn-outline-primary" for="boxed-layout">
+                                <i class="icon ti ti-layout-distribute-vertical fs-7 me-2"></i>Boxed
+                            </label>
+
+                            <input type="radio" class="btn-check" name="boxedcontainer" id="full-layout"
+                                autocomplete="off" value="full" />
+                            <label class="btn p-9 btn-outline-primary" for="full-layout">
+                                <i class="icon ti ti-layout-distribute-horizontal fs-7 me-2"></i>Full
+                            </label>
+                        </div>
+
+                        <h6 class="fw-semibold fs-4 mb-2 mt-5">Sidebar Type</h6>
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <a href="javascript:void(0)" class="fullsidebar">
+                                <input type="radio" class="btn-check" name="sidebartype" id="full-sidebar"
+                                    autocomplete="off" value="full" />
+                                <label class="btn p-9 btn-outline-primary" for="full-sidebar">
+                                    <i class="icon ti ti-layout-sidebar-right fs-7 me-2"></i>Full
+                                </label>
+                            </a>
+                            <div>
+                                <input type="radio" class="btn-check " name="sidebartype" id="mini-sidebar"
+                                    autocomplete="off" value="mini-sidebar" />
+                                <label class="btn p-9 btn-outline-primary" for="mini-sidebar">
+                                    <i class="icon ti ti-layout-sidebar fs-7 me-2"></i>Collapse
+                                </label>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-5 fw-semibold fs-4 mb-2">Card With</h6>
+
+                        <div class="d-flex flex-row gap-3 customizer-box" role="group">
+                            <input type="radio" class="btn-check" name="borderedcard" id="card-with-border"
+                                autocomplete="off" value="border" />
+                            <label class="btn p-9 btn-outline-primary" for="card-with-border">
+                                <i class="icon ti ti-border-outer fs-7 me-2"></i>Border
+                            </label>
+
+                            <input type="radio" class="btn-check" name="borderedcard" id="card-without-border"
+                                autocomplete="off" value="shadow" />
+                            <label class="btn p-9 btn-outline-primary" for="card-without-border">
+                                <i class="icon ti ti-border-none fs-7 me-2"></i>Shadow
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center p-3 border-top">
+                        <button type="submit" class="btn btn-primary w-100" aria-label="Save changes">Save</button>
+                    </div>
                 </div>
-                <div class="offcanvas-body h-n80" data-simplebar>
-                    <h6 class="fw-semibold fs-4 mb-2">Theme</h6>
-
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check light-layout" name="theme-layout"
-                            id="light-layout" autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary rounded-2" for="light-layout">
-                            <i class="icon ti ti-brightness-up fs-7 me-2"></i>Light
-                        </label>
-
-                        <input type="radio" class="btn-check dark-layout" name="theme-layout" id="dark-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary rounded-2" for="dark-layout">
-                            <i class="icon ti ti-moon fs-7 me-2"></i>Dark
-                        </label>
-                    </div>
-
-                    <h6 class="mt-5 fw-semibold fs-4 mb-2">Theme Direction</h6>
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check" name="direction-l" id="ltr-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="ltr-layout">
-                            <i class="icon ti ti-text-direction-ltr fs-7 me-2"></i>LTR
-                        </label>
-
-                        <input type="radio" class="btn-check" name="direction-l" id="rtl-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="rtl-layout">
-                            <i class="icon ti ti-text-direction-rtl fs-7 me-2"></i>RTL
-                        </label>
-                    </div>
-
-                    <h6 class="mt-5 fw-semibold fs-4 mb-2">Theme Colors</h6>
-
-                    <div class="d-flex flex-row flex-wrap gap-3 customizer-box color-pallete" role="group">
-                        <input type="radio" class="btn-check" name="color-theme-layout" id="Blue_Theme"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Blue_Theme')" for="Blue_Theme" data-bs-toggle="tooltip"
-                            data-bs-placement="top" data-bs-title="BLUE_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-1">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="color-theme-layout" id="Aqua_Theme"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Aqua_Theme')" for="Aqua_Theme" data-bs-toggle="tooltip"
-                            data-bs-placement="top" data-bs-title="AQUA_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-2">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="color-theme-layout" id="Purple_Theme"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Purple_Theme')" for="Purple_Theme" data-bs-toggle="tooltip"
-                            data-bs-placement="top" data-bs-title="PURPLE_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-3">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="color-theme-layout"
-                            id="green-theme-layout" autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Green_Theme')" for="green-theme-layout"
-                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-4">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="color-theme-layout" id="cyan-theme-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Cyan_Theme')" for="cyan-theme-layout"
-                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CYAN_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-5">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-
-                        <input type="radio" class="btn-check" name="color-theme-layout"
-                            id="orange-theme-layout" autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary d-flex align-items-center justify-content-center"
-                            onclick="handleColorTheme('Orange_Theme')" for="orange-theme-layout"
-                            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ORANGE_THEME">
-                            <div
-                                class="color-box rounded-circle d-flex align-items-center justify-content-center skin-6">
-                                <i class="ti ti-check text-white d-flex icon fs-5"></i>
-                            </div>
-                        </label>
-                    </div>
-
-                    <h6 class="mt-5 fw-semibold fs-4 mb-2">Layout Type</h6>
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <div>
-                            <input type="radio" class="btn-check" name="page-layout" id="vertical-layout"
-                                autocomplete="off" />
-                            <label class="btn p-9 btn-outline-primary" for="vertical-layout">
-                                <i class="icon ti ti-layout-sidebar-right fs-7 me-2"></i>Vertical
-                            </label>
-                        </div>
-                        <div>
-                            <input type="radio" class="btn-check" name="page-layout" id="horizontal-layout"
-                                autocomplete="off" />
-                            <label class="btn p-9 btn-outline-primary" for="horizontal-layout">
-                                <i class="icon ti ti-layout-navbar fs-7 me-2"></i>Horizontal
-                            </label>
-                        </div>
-                    </div>
-
-                    <h6 class="mt-5 fw-semibold fs-4 mb-2">Container Option</h6>
-
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check" name="layout" id="boxed-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="boxed-layout">
-                            <i class="icon ti ti-layout-distribute-vertical fs-7 me-2"></i>Boxed
-                        </label>
-
-                        <input type="radio" class="btn-check" name="layout" id="full-layout"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="full-layout">
-                            <i class="icon ti ti-layout-distribute-horizontal fs-7 me-2"></i>Full
-                        </label>
-                    </div>
-
-                    <h6 class="fw-semibold fs-4 mb-2 mt-5">Sidebar Type</h6>
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <a href="javascript:void(0)" class="fullsidebar">
-                            <input type="radio" class="btn-check" name="sidebar-type" id="full-sidebar"
-                                autocomplete="off" />
-                            <label class="btn p-9 btn-outline-primary" for="full-sidebar">
-                                <i class="icon ti ti-layout-sidebar-right fs-7 me-2"></i>Full
-                            </label>
-                        </a>
-                        <div>
-                            <input type="radio" class="btn-check " name="sidebar-type" id="mini-sidebar"
-                                autocomplete="off" />
-                            <label class="btn p-9 btn-outline-primary" for="mini-sidebar">
-                                <i class="icon ti ti-layout-sidebar fs-7 me-2"></i>Collapse
-                            </label>
-                        </div>
-                    </div>
-
-                    <h6 class="mt-5 fw-semibold fs-4 mb-2">Card With</h6>
-
-                    <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                        <input type="radio" class="btn-check" name="card-layout" id="card-with-border"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="card-with-border">
-                            <i class="icon ti ti-border-outer fs-7 me-2"></i>Border
-                        </label>
-
-                        <input type="radio" class="btn-check" name="card-layout" id="card-without-border"
-                            autocomplete="off" />
-                        <label class="btn p-9 btn-outline-primary" for="card-without-border">
-                            <i class="icon ti ti-border-none fs-7 me-2"></i>Shadow
-                        </label>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
 
         <!--  Search Bar -->
@@ -1599,8 +1038,7 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg">
                 <div class="modal-content rounded-1">
                     <div class="modal-header border-bottom">
-                        <input type="search" class="form-control fs-3" placeholder="Search here"
-                            id="search" />
+                        <input type="search" class="form-control fs-3" placeholder="Search here" id="search" />
                         <a href="javascript:void(0)" data-bs-dismiss="modal" class="lh-1">
                             <i class="ti ti-x fs-5 ms-3"></i>
                         </a>
@@ -1693,13 +1131,22 @@
     <!-- Import Js Files -->
     <script src="{{ asset('template/backend') }}/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('template/backend') }}/dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script>
+        const theme = @json($setting->theme);
+        const themeDir = @json($setting->themedir);
+        const themeColor = @json($setting->themecolor);
+        const layoutType = @json($setting->layouttype);
+        const boxedContainer = @json($setting->boxedcontainer);
+        const sidebarType = @json($setting->sidebartype);
+        const borderedCard = @json($setting->borderedcard);
+    </script>
     <script src="{{ asset('template/backend') }}/dist/js/theme/app.init.js"></script>
     <script src="{{ asset('template/backend') }}/dist/js/theme/theme.js"></script>
     <script src="{{ asset('template/backend') }}/dist/js/theme/app.min.js"></script>
     <script src="{{ asset('template/backend') }}/dist/js/theme/sidebarmenu.js"></script>
 
-     {{-- <script src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/js/dashboards/dashboard.js"></script> --}}
-     @stack('scripts')
+    {{-- <script src="https://bootstrapdemos.adminmart.com/modernize/dist/assets/js/dashboards/dashboard.js"></script> --}}
+    @stack('scripts')
 </body>
 
 </html>

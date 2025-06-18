@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Permission\Traits\HasRoles;
@@ -12,6 +13,41 @@ class UserController extends Controller
     public function index()
     {
         return view('auth.login');
+    }
+    public function saveSettings(Request $request)
+    {
+        // dd($request->all());
+        if ($request->boxedcontainer == 'boxed') {
+            $request['boxedcontainer'] = true;
+        } else {
+            $request['boxedcontainer'] = false;
+        }
+
+        if ($request->borderedcard == 'border') {
+            $request['borderedcard'] = true;
+        } else {
+            $request['borderedcard'] = false;
+        }
+
+        $request->validate([
+            'theme' => 'required|string',
+            'themedir' => 'required|string',
+            'themecolor' => 'required|string',
+            'layouttype' => 'required|string',
+            'boxedcontainer' => 'required|boolean',
+            'sidebartype' => 'required|string',
+            'borderedcard' => 'required|boolean'
+        ]);
+        Setting::where('user_id', auth()->user()->id)->update([
+            'theme' => $request->theme,
+            'themedir' => $request->themedir,
+            'themecolor' => $request->themecolor,
+            'layouttype' => $request->layouttype,
+            'boxedcontainer' => $request->boxedcontainer,
+            'sidebartype' => $request->sidebartype,
+            'borderedcard' => $request->borderedcard
+        ]);
+        return back()->with('success', 'Settings saved successfully!');
     }
     public function login(Request $request)
     {
