@@ -16,7 +16,6 @@ class UserController extends Controller
     }
     public function saveSettings(Request $request)
     {
-        // dd($request->all());
         if ($request->boxedcontainer == 'boxed') {
             $request['boxedcontainer'] = true;
         } else {
@@ -51,7 +50,7 @@ class UserController extends Controller
     }
     public function login(Request $request)
     {
-        if (Auth::attempt($request->only('email', 'password'))) {
+        if (Auth::attempt($request->only('email', 'password'), $request->rememberme)) {
             $request->session()->regenerate();
             activity()->event('login')->log(auth()->user()->name . ' has logged in.');
             return redirect('/');

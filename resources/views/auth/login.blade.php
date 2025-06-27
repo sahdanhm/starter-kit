@@ -27,7 +27,7 @@
     <!--  Body Wrapper -->
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full"
         data-sidebar-position="fixed" data-header-position="fixed">
-        <div class="position-relative overflow-hidden radial-gradient min-vh-100">
+        <div class="position-relative overflow-hidden radial-gradient vh-100">
             <div class="position-relative z-index-5">
                 <div class="row">
                     <div class="col-xl-7 col-xxl-8">
@@ -68,7 +68,15 @@
                                             </span>
                                         </div>
                                     </div>
-
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="form-check">
+                                          <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" name="rememberme" checked>
+                                          <label class="form-check-label text-dark" for="flexCheckChecked">
+                                            Remeber me
+                                          </label>
+                                        </div>
+                                        <a class="text-primary fw-medium" href="#">Forgot Password ?</a>
+                                      </div>
                                     <button type="submit" class="btn btn-primary w-100 py-8 mb-4 rounded-2">Log
                                         In</button>
                                 </form>
